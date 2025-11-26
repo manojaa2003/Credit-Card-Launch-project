@@ -1,7 +1,7 @@
 # Credit-Card-Launch-project
 A complete end-to-end Data Cleaning, Statistical Analysis, and Financial Product Evaluation project.
 
-📘 Overview
+#📘 Overview
 
 This project simulates real-world Banking & Financial Services (BFSI) analytics using customer credit data from Atliqo Bank.
 It is divided into two major phases:
@@ -12,12 +12,12 @@ Phase 2: Statistical A/B Testing & Business Recommendations
 
 This case study comes from Codebasics – Math & Statistics course.
 
-🔶 Phase 1 — Data Cleaning & Preprocessing
-🎯 Objective
+#🔶 Phase 1 — Data Cleaning & Preprocessing
+##🎯 Objective
 
 Prepare raw banking data into a clean, validated, analysis-ready dataset.
 
-📝 Dataset Understanding
+##📝 Dataset Understanding
 
 The dataset includes:
 
@@ -31,22 +31,22 @@ Spending and transactions
 
 Credit score & delinquency indicators
 
-🧹 Missing Value Treatment
-🔍 Missing Columns
-credit_limit
+##🧹 Missing Value Treatment
+##🔍 Missing Columns
+->credit_limit
 
-age
+->age
 
-annual_income
+->annual_income
 
-Certain categorical fields
+->Certain categorical fields
 
-🧠 Imputation Logic
+##🧠 Imputation Logic
 
-Numeric features:
+###Numeric features:
 Group-wise mode imputation using (employment type × credit score range)
 
-Categorical features:
+###Categorical features:
 Mode imputation based on customer groupings
 
 This ensures domain-consistent values.
@@ -64,7 +64,7 @@ Distribution plots
 
 Numeric boundary checks
 
-📦 Final Output of Phase 1
+##📦 Final Output of Phase 1
 
 Multiple cleaned dataset versions:
 
@@ -74,8 +74,8 @@ df_cs_clean_2
 
 df_cs_clean_3 (final)
 
-🔶 Phase 2 — Statistical A/B Testing
-🎯 Objective
+#🔶 Phase 2 — Statistical A/B Testing
+##🎯 Objective
 
 Evaluate whether a new credit card variant increases customer monthly spending.
 
@@ -93,7 +93,7 @@ test_group_avg_tran
 
 These quantify customer spending behavior.
 
-📊 Descriptive Statistics
+##📊 Descriptive Statistics
 
 Compared control vs. test groups using:
 
@@ -105,29 +105,29 @@ Standard deviation
 
 Distribution shape
 
-🧪 Hypothesis Testing — Two-Sample Z-Test
-📘 Hypothesis Formulation
+##🧪 Hypothesis Testing — Two-Sample Z-Test
+###📘 Hypothesis Formulation
 
 H₀ (Null): Test group average spend ≤ Control group
 
 H₁ (Alternative): Test group average spend > Control group (right-tailed)
 
-🧮 Results
+##🧮 Results
 
 Z-score > Critical Z-value
 
 p-value < 0.05
 
-✔ Conclusion
+##✔ Conclusion
 
 Reject H₀ — the new credit card variant significantly increases average monthly spending.
 
-🔁 Validation
+##🔁 Validation
 
 Performed a second test using statsmodels.stats.weightstats.ztest to confirm the results.
 
-🎯 Key Skills Demonstrated
-🟧 Data Engineering
+##🎯 Key Skills Demonstrated
+##🟧 Data Engineering
 
 Data Cleaning
 
@@ -137,7 +137,7 @@ Outlier Detection
 
 Feature Engineering
 
-🟦 Statistics & Modeling
+##🟦 Statistics & Modeling
 
 A/B Testing
 
@@ -147,7 +147,7 @@ Hypothesis Testing
 
 Descriptive Statistics
 
-🟩 Visualization
+##🟩 Visualization
 
 Boxplots
 
@@ -155,7 +155,7 @@ Histograms
 
 Comparative Group Analysis
 
-🟪 Banking Domain Knowledge
+##🟪 Banking Domain Knowledge
 
 Credit Risk Analytics
 
@@ -163,7 +163,7 @@ Spending Behavior Analysis
 
 Product Evaluation & Recommendation
 
-🛠️ Tech Stack
+##🛠️ Tech Stack
 
 Python
 
@@ -179,7 +179,7 @@ Statsmodels
 
 Jupyter Notebook
 
-📈 Business Outcome
+##📈 Business Outcome
 
 The statistical analysis proves that the new credit card variant yields higher customer spending, making it a strong candidate for rollout.
 
